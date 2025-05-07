@@ -120,6 +120,7 @@ async function question5() {
   );
 }
 
+// Function to check whether the answer is true or false. If it is true then the game continues or else it ends immediately.
 async function handleAnswer(isCorrect) {
   const spinner = createSpinner("Checking answer...").start();
   await sleep();
@@ -135,6 +136,7 @@ async function handleAnswer(isCorrect) {
   }
 }
 
+// Function to display the reward to the winner.
 function winner() {
   console.clear();
   const msg = `Congratulations ${playerName} !\n $ 1, 0 0 0, 0 0 0 `;
