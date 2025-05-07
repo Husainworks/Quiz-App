@@ -1,8 +1,7 @@
 #!/usr//bin/env node
-
 import chalk from "chalk";
 import inquirer from "inquirer";
-import gradient from "gradient-string";
+import { pastel } from "gradient-string";
 import chalkAnimation from "chalk-animation";
 import figlet from "figlet";
 import { createSpinner } from "nanospinner";
@@ -141,7 +140,7 @@ function winner() {
   const msg = `Congratulations ${playerName} !\n $ 1, 0 0 0, 0 0 0 `;
 
   figlet(msg, (err, data) => {
-    console.log(gradient.pastel.multiline(data));
+    console.log(pastel.multiline(data));
   });
 }
 
